@@ -1,0 +1,22 @@
+{
+  "name": "gameshop",
+  "version": "0.0.1",
+  "main": "index.js",
+  "author": "Gediminas Girdvainis",
+  "scripts": {
+    "start": "parcel index.html -p 9392 --open",
+    "build": "parcel build index.html"
+  },
+  "devDependencies": {
+    "babel-cli": "^6.26.0",
+    "babel-preset-env": "^1.6.1",
+    "babel-preset-es2015": "^6.24.1",
+    "babel-preset-stage-0": "^6.24.1",
+    "node-sass": "^4.8.3",
+    "parcel-bundler": "1.6.2",
+    "prettier": "1.12.1"
+  },
+  "dependencies": {
+    "bootstrap": "^4.1.1"
+  }
+}
