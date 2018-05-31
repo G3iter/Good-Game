@@ -27,3 +27,8 @@
 * When work finished - add, commit and push changes to current branch
 * When pushed - go to github and do a `pull request`
 * After that go to master, update it with `pull` and create another branch and continue working
+
+##### Icons:
+* All available icons are here: `https://ionicons.com/`
+* Add icon in HTML like this:
+`<i class="icon ion-md-[ICON_NAME]"></i>`
