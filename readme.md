@@ -2,12 +2,12 @@
 
 ##### To start developing:
 1. Open `Git Bash` terminal
-2. Go to projects directory
+2. Go to projects directory (`cd projects/Good-Game`)
 3. Run `yarn start`
 
 ##### To build for production (end result):
 1. Open `Git Bash` terminal
-2. Go to projects directory
+2. Go to projects directory (`cd projects/Good-Game`)
 3. Run `yarn run build`
 
 ##### Git commands:
