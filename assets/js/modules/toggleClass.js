@@ -1,10 +1,18 @@
-const buttons = Array.from(document.querySelectorAll('[data-toggle-class-target]'));
+const buttons = Array.from(
+  document.querySelectorAll('[data-toggle-class-target]')
+);
 
 buttons.map(button => {
   button.addEventListener('click', () => {
-    const targetSelector = button.getAttribute('data-toggle-class-target');
-    const targets = Array.from(document.querySelectorAll(targetSelector));
-    const shouldCloseOthers = button.hasAttribute('data-toggle-class-close-others');
+    const targetSelector = button.getAttribute(
+      'data-toggle-class-target'
+    );
+    const targets = Array.from(
+      document.querySelectorAll(targetSelector)
+    );
+    const shouldCloseOthers = button.hasAttribute(
+      'data-toggle-class-close-others'
+    );
 
     if (shouldCloseOthers) removeClassesFromAll(button);
 
@@ -12,13 +20,19 @@ buttons.map(button => {
   });
 });
 
-const removeClassesFromAll = (button) => {
+const removeClassesFromAll = button => {
   const buttonId = button.getAttribute('data-toggle-class-id');
-  const buttonsGroup = Array.from(document.querySelectorAll(`[data-toggle-class-id="${buttonId}"]`));
+  const buttonsGroup = Array.from(
+    document.querySelectorAll(`[data-toggle-class-id="${buttonId}"]`)
+  );
 
   buttonsGroup.map(button => {
-    const targetSelector = button.getAttribute('data-toggle-class-target');
-    const targets = Array.from(document.querySelectorAll(targetSelector));
+    const targetSelector = button.getAttribute(
+      'data-toggle-class-target'
+    );
+    const targets = Array.from(
+      document.querySelectorAll(targetSelector)
+    );
 
     button.classList.remove('is-active');
     button.setAttribute('data-opened', false);
