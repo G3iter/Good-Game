@@ -1,5 +1,5 @@
 .button {
-  background-color: black;
+  background-color: $color-header;
   border: white;
   color: white;
   padding: 15px 32px;
@@ -13,5 +13,41 @@
 
   &:hover {
     color: grey;
+    border: white;
+    
+  }
+}
+
+.button-tag{
+  background-color: $color-secondary;
+  border: $color-primary;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 10px;
+  cursor: pointer;
+
+  &:hover {
+    color: grey;
+    border: white;
+    
+  }
+}
+
+.button-landing{
+  background-color: $color-button;
+  border: $color-primary;
+  color: white;
+  padding: 10px 20px;
+  text-align: center;
+  display: inline-block;
+  font-size: 10px;
+  cursor: pointer;
+
+  &:hover {
+    color: grey;
+    border: white;
+    
   }
 }
